@@ -1,5 +1,7 @@
 package problem01;
 
+import com.sun.xml.internal.ws.util.StringUtils;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -21,6 +23,20 @@ public class Main {
 	}
 	
 	public static int countClap(int number) {
-		return 0;
+		
+	    String str = String.valueOf(number);
+	    char[] c = str.toCharArray(); // converting to a char array
+	    int cnt = 0;
+
+	    for(int i = 0; i< c.length;i++) {
+	        if(c[i]=='3') // looking for 'a' only
+	            cnt++;
+	        if(c[i]=='6')
+        	    cnt++;
+	        if(c[i]=='9')
+        	    cnt++;
+  
+	    }
+		return cnt;
 	}
 }
