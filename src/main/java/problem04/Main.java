@@ -9,7 +9,7 @@ public class Main {
 		int strike = 0;
 		int ball = 0;
 		int start = 1;
-		int end = 10;
+		int end = 9;
 		double range = end - start + 1;
 		
 		int randNum[] = new int[3];
@@ -61,12 +61,14 @@ public class Main {
 			System.out.print(String.valueOf(cnt) + " - S:" + String.valueOf(strike) + ", B:" + String.valueOf(ball) + ", O:" + String.valueOf(3-strike-ball));
 
 			cnt++;
-			strike = 0;
-			ball = 0;
+			
+			
 			if(strike == 3) {
 				System.out.println("종료");
 				break;
 			}
+			strike = 0;
+			ball = 0;
 			
 		}
 		
